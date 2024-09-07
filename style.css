@@ -1,0 +1,207 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+
+.logop{
+    width: 150px;
+    border-radius: 000px;                                      
+    border: 1px solid rgb(14, 13, 13);
+    color: blanchedalmond;
+}
+.nav{
+    padding: 0px 20px;
+}
+.nav-bar > ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0px 20px;
+}
+.nav-bar > ul > li{
+    padding: 10px;
+    margin: 10px;
+}
+
+.res-logo{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  
+      
+} */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f3f1;
+    color: #fff;
+    border-bottom: 2px solid #444;
+}
+
+/* Logo Styling */
+.logop {
+    width: 120px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+
+.logop img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Navigation Styling */
+.nav {
+    padding: 0 20px;
+}
+.nav-bar{
+    text-decoration: none;
+}
+
+.nav-bar > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.nav-bar > ul > li {
+    padding: 10px;
+    margin: 0;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-bar > ul > li:hover {
+    color: #ffcc00;
+    cursor: pointer;
+}
+
+/* Add Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-bar > ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+
+/* .res-container{
+    flex-wrap: wrap;
+    display: flex;
+  
+}
+.res-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+   flex-wrap: wrap;
+  }
+  .res-card p {
+    font-size: 5px;
+    line-height: 1.5;
+  }
+  .res-card h3,.res-card h4 {
+    margin: 0;
+  }
+
+  .res-card h4 {
+   padding: 2%;
+  } */
+  .res-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add spacing between cards */
+    justify-content:center; /* Center the cards horizontally */
+    padding: 20px; /* Add some padding around the container */
+}
+
+.res-card {
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    width: 250px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+    cursor: pointer;
+    background-color: #fff; /* Ensure a white background */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effects */
+     /* Set a fixed width for consistency */
+    text-align: center; /* Center the text inside the cards */
+}
+
+.res-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.res-card h3, .res-card h4 {
+    margin: 0;
+    font-size: 16px; /* Increase font size for better readability */
+}
+
+.res-card h4 {
+    padding: 5px 0; /* Add vertical padding */
+    font-size: 14px;
+    color: #666; /* Subtle text color for secondary information */
+}
+
+.res-card p {
+    font-size: 12px; /* Increase font size for readability */
+    line-height: 1.5;
+    color: #333; /* Darker text color for better contrast */
+}
+
+.res-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+ .filter-btn{
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+ }
+ .Shimmer-cont{
+    display: flex;
+ }
+ .Shimmer-card{
+    width: 250px;
+    height: autox;
+ }
+ .login{
+    cursor: pointer;
+ }
+ .Filter{
+    display: flex;
+ }

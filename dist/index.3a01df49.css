@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  color: #fff;
+  background-color: #f4f3f1;
+  border-bottom: 2px solid #444;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  display: flex;
+}
+
+.logop {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 120px;
+  overflow: hidden;
+}
+
+.logop img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.nav {
+  padding: 0 20px;
+}
+
+.nav-bar {
+  text-decoration: none;
+}
+
+.nav-bar > ul {
+  gap: 20px;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-bar > ul > li {
+  margin: 0;
+  padding: 10px;
+  font-size: 16px;
+  transition: color .3s;
+}
+
+.nav-bar > ul > li:hover {
+  color: #fc0;
+  cursor: pointer;
+}
+
+@media (width <= 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-bar > ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.res-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  display: flex;
+}
+
+.res-card {
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 250px;
+  margin-bottom: 20px;
+  padding: 15px;
+  transition: transform .2s, box-shadow .2s;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.res-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px #0003;
+}
+
+.res-card h3, .res-card h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.res-card h4 {
+  color: #666;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.res-card p {
+  color: #333;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.res-card img {
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.filter-btn {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+}
+
+.Shimmer-cont {
+  display: flex;
+}
+
+.Shimmer-card {
+  height: autox;
+  width: 250px;
+}
+
+.login {
+  cursor: pointer;
+}
+
+.Filter {
+  display: flex;
+}
+/*# sourceMappingURL=index.3a01df49.css.map */
